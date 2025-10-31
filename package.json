@@ -1,0 +1,23 @@
+{
+  "name": "veasna-pov-lab1",
+  "version": "1.0.0",
+  "type": "module",
+  "main": "server.js",
+  "repository": "https://github.com/veasnapovsr/veasna-pov-lab1.git",
+  "author": "<veasnavarapov@gmail.com>",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^5.1.0"
+  },
+  "devDependencies": {
+    "chai": "^6.2.0",
+    "eslint": "^9.38.0",
+    "mocha": "^11.7.4",
+    "supertest": "^7.1.4"
+  },
+  "scripts": {
+   "start": "node server.js",
+  "test": "mocha test/*.js",
+  "lint": "eslint . --ext .js"
+  }
+}
