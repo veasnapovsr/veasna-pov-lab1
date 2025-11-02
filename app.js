@@ -1,5 +1,9 @@
-// Example: test/test.js
-it('should return "Hello, CI/CD!"', async () => {
-  const res = await request(app).get('/');
-  expect(res.text).to.equal('Hello, CI/CD!');
+import express from 'express';
+
+const app = express();
+
+app.get('/', (req, res) => {
+  res.status(200).send('Hello, GitHub Actions!');
 });
+
+export default app;
